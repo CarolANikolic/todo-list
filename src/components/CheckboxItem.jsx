@@ -2,10 +2,10 @@ import React from 'react'
 
 export const CheckboxItem = (props) => {
   return (
-    <div>
+    <div className='todoContainer'>
       <input type='checkbox'/>
       <span>{props.text}</span>
-      <button>Delete</button>
+      <button onClick={() => props.delete()}>Delete</button>
     </div>
   )
 }

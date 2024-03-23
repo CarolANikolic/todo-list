@@ -4,6 +4,7 @@ import handleTodoFormSubmission from '../functions/handleTodoFormSubmission';
 import getUserID from '../functions/getUserID';
 import { CheckboxList } from './CheckboxList';
 import getTodosFromLocalStorage from '../functions/getTodosFromLocalStorage';
+import deleteTodo from '../functions/deleteTodo';
 
 export const TodoWrapper = () => {
     const userID = getUserID();
@@ -31,7 +32,7 @@ export const TodoWrapper = () => {
                 onSubmit={handleTodoFormSubmission}           
                 btnStyle='todoForm__button'
             />
-            <CheckboxList list={allTodos}/>
+            <CheckboxList list={allTodos} delete={deleteTodo}/>
         </div>
     );
 };
