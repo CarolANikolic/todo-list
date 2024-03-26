@@ -1,14 +1,18 @@
 import React from 'react';
 import { CheckboxItem } from './CheckboxItem';
+import updateTodo from '../functions/updateTodo';
 
-export const CheckboxList = (props) => {
+export const CheckboxList = (props) => {    
     return (
         <div>
             {props.list.map(item => (
-                <CheckboxItem 
+            <CheckboxItem 
                 key={item.id} 
                 text={item.task} 
-                delete={() => props.delete(item.id)} />
+                id={item.id} 
+                delete={() => props.delete(item.id)} 
+                update={updateTodo}
+            />
             ))}
         </div>
     );

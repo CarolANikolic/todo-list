@@ -5,6 +5,8 @@ import getUserID from '../functions/getUserID';
 import { CheckboxList } from './CheckboxList';
 import getTodosFromLocalStorage from '../functions/getTodosFromLocalStorage';
 import deleteTodo from '../functions/deleteTodo';
+import updateTodo from '../functions/updateTodo';
+
 
 export const TodoWrapper = () => {
     const userID = getUserID();
