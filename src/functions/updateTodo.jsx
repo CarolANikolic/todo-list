@@ -6,7 +6,7 @@ const updateTodo = (id, content) => {
     const userID = getUserID();
     const todos = getTodosFromLocalStorage(userID);
     const todoIndex = todos.findIndex(todo => todo.id === id)
-    
+
     if (todoIndex !== -1) {
         todos[todoIndex].task = content;
         saveTodosInLocalStorage(userID, todos)
