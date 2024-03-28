@@ -1,6 +1,6 @@
 import React from 'react';
-import { CheckboxItem } from './CheckboxItem';
-import updateTodo from '../functions/updateTodo';
+import { CheckboxItem } from '../CheckboxItem/CheckboxItem';
+import updateTodo from '../../functions/updateTodo';
 
 export const CheckboxList = (props) => {    
     return (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import formConfigs from '../objects/formConfigs';
+import formConfigs from '../../objects/formConfigs';
 
 export const FormFactory = (props) => {
     const [inputValue, setInputValue] = useState("");

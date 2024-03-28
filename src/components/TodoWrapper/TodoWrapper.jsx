@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { FormFactory } from './FormFactory';
-import handleTodoFormSubmission from '../functions/handleTodoFormSubmission';
-import getUserID from '../functions/getUserID';
-import { CheckboxList } from './CheckboxList';
-import getTodosFromLocalStorage from '../functions/getTodosFromLocalStorage';
-import deleteTodo from '../functions/deleteTodo';
-import updateTodo from '../functions/updateTodo';
-
+import { FormFactory } from '../FormFactory/FormFactory';
+import handleTodoFormSubmission from '../../functions/handleTodoFormSubmission';
+import getUserID from '../../functions/getUserID';
+import { CheckboxList } from '../CheckboxList/CheckboxList';
+import getTodosFromLocalStorage from '../../functions/getTodosFromLocalStorage';
+import deleteTodo from '../../functions/deleteTodo';
 
 export const TodoWrapper = () => {
     const userID = getUserID();
@@ -27,7 +25,7 @@ export const TodoWrapper = () => {
     }, [userID, allTodos]); // Include all dependencies
 
     return (
-        <div className="todoWrapper">
+        <session className="todoWrapper">
             <FormFactory
                 formStyle='todoForm'
                 type='todoForm'
@@ -35,6 +33,6 @@ export const TodoWrapper = () => {
                 btnStyle='todoForm__button'
             />
             <CheckboxList list={allTodos} delete={deleteTodo}/>
-        </div>
+        </session>
     );
 };
