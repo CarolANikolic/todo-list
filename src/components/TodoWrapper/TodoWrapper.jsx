@@ -5,6 +5,7 @@ import getUserID from '../../functions/getUserID';
 import { CheckboxList } from '../CheckboxList/CheckboxList';
 import getTodosFromLocalStorage from '../../functions/getTodosFromLocalStorage';
 import deleteTodo from '../../functions/deleteTodo';
+import styles from './TodoWrapper.module.css'
 
 export const TodoWrapper = () => {
     const userID = getUserID();
@@ -25,7 +26,8 @@ export const TodoWrapper = () => {
     }, [userID, allTodos]); // Include all dependencies
 
     return (
-        <session className="todoWrapper">
+        <section className={styles.todoWrapper}>
+            <h1>Todo</h1>
             <FormFactory
                 formStyle='todoForm'
                 type='todoForm'
@@ -33,6 +35,6 @@ export const TodoWrapper = () => {
                 btnStyle='todoForm__button'
             />
             <CheckboxList list={allTodos} delete={deleteTodo}/>
-        </session>
+        </section>
     );
 };
