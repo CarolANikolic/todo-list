@@ -1,9 +1,10 @@
 import handleFormSubmssion from "../functions/handleTodoFormSubmission"
+import styles from "../components/FormFactory/FormFactory.module.css"
 
 const formConfigs = {
     todoForm: {
         fields: [
-            { className:'todoForm__input', 
+            { className: styles.form__input, 
             type: 'text', 
             placeholder: 'Enter your task'}
         ],
