@@ -29,7 +29,7 @@ export const TodoWrapper = () => {
         <section className={styles.todoWrapper}>
             <h1>Todo</h1>
             <FormFactory
-                formStyle='todoForm'
+                formStyle={styles.todoForm}
                 type='todoForm'
                 onSubmit={handleTodoFormSubmission}           
                 btnStyle='todoForm__button'

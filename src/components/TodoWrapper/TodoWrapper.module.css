@@ -8,3 +8,8 @@
     height: 400px;
     width: 80%;
 }
+
+.todoForm {
+    display: inherit;
+    width: 70%;
+}
