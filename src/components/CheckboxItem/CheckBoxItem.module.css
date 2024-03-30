@@ -1,0 +1,29 @@
+.checkboxItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.textInput {
+    background-color: #f8fafa;
+    color: #1b1b1b;
+
+    font-size: 1rem;
+
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: .5rem;
+    width: 50%;
+}
+
+.checkboxItem button {
+    background-color: #805AD5;
+    background-image: url('../../../public/images/trash.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    
+    margin-right: 10px;
+    width: 1.5rem;
+}

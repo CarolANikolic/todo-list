@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from '../CheckboxItem/CheckBoxItem.module.css';
 
 export const CheckboxItem = (props) => {
   const [content, setContent] = useState(props.text);
@@ -9,9 +10,10 @@ export const CheckboxItem = (props) => {
   };
 
   return (
-    <div className='todoContainer'>
+    <div className={styles.checkboxItem}>
       <input type='checkbox'/>
       <input 
+        className={styles.textInput}
         type="text"
         value={content}
         onChange={handleChange}
@@ -19,7 +21,7 @@ export const CheckboxItem = (props) => {
       <button 
         onClick={props.delete}
       >
-        Delete
+        {/* Delete */}
       </button>
     </div>
   );
