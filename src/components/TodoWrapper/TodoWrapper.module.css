@@ -14,7 +14,9 @@
 .todoForm {
     display: inherit;
     justify-content: space-between;
+
     width: 70%;
+    margin-bottom: 2rem;
 }
 
 .todoForm__button {
