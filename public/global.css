@@ -5,6 +5,10 @@
     --dark-purple: #805AD5;
     --light-purple: #af9bdb;
     --light-blue: #03a9f4;
+
+    /* Font size */
+    --fs-small: 1rem;
+    --fs-big: 2rem;
 }
 
 html, body, ul {
@@ -22,4 +26,11 @@ main {
     justify-content: center; 
     align-items: center;
     min-height: 100vh;
+}
+
+@media  screen and (min-width: 1024px) {
+    :root {
+        --fs-small: 1.2rem;
+        --fs-big: 2.5rem;
+    }
 }

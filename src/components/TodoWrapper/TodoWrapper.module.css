@@ -11,6 +11,11 @@
     width: 90%;
 }
 
+.title {
+    color: var(--white);
+    font-size: var(--fs-big);
+}
+
 .todoForm {
     display: inherit;
     justify-content: space-between;
@@ -24,13 +29,19 @@
     color: var(--white);
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: var(--fs-small);
     font-weight: bolder;
     padding: 0 .5rem;
 }
 
 @media screen and (min-width: 481px) {
     .todoWrapper {
+        width: 70%;
+    }
+
+    .titleContainer {
+        text-align: left;
+        margin: 0 auto;
         width: 70%;
     }
 

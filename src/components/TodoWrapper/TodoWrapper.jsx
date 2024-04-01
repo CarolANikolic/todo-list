@@ -27,7 +27,9 @@ export const TodoWrapper = () => {
 
     return (
         <section className={styles.todoWrapper}>
-            <h1>Todo</h1>
+            <div className={styles.titleContainer}>
+                <h1 className={styles.title}>Todo</h1>
+            </div>
             <FormFactory
                 formStyle={styles.todoForm}
                 type='todoForm'
