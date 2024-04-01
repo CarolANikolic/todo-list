@@ -1,3 +1,12 @@
+:root {
+    /* Colors */
+    --white: #f8fafa;
+    --black: #1b1b1b;
+    --dark-purple: #805AD5;
+    --light-purple: #af9bdb;
+    --light-blue: #03a9f4;
+}
+
 html, body, ul {
     box-sizing: border-box;
     margin: 0;

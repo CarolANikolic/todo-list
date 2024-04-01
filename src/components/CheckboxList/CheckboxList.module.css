@@ -9,26 +9,26 @@
 }
 
 .list::-webkit-scrollbar {
-    background-color: #af9bdb;
-    scrollbar-color: #f8fafa;
+    background-color: var(--light-purple);
+    scrollbar-color: var(--white);
 }
 
 /* For WebKit browsers (Chrome, Safari, etc.) */
 ::-webkit-scrollbar-thumb {
-    background-color: #f8fafa;
+    background-color: var(--white);
 }
 
 /* For Firefox */
 ::-moz-scrollbar-thumb {
-    background-color: #f8fafa;
+    background-color: var(--white);
 }
 
 /* For Edge */
 ::-ms-scrollbar-thumb {
-    background-color: #f8fafa;
+    background-color: var(--white);
 }
 
 /* For Opera */
 ::-o-scrollbar-thumb {
-    background-color: #f8fafa;
+    background-color: var(--white);
 }

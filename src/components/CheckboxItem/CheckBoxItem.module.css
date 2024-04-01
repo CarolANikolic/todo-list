@@ -5,8 +5,8 @@
 }
 
 .textInput {
-    background-color: #f8fafa;
-    color: #1b1b1b;
+    background-color: var(--white);
+    color: var(--black);
 
     font-size: 1rem;
 
@@ -18,7 +18,7 @@
 }
 
 .checkboxItem button {
-    background-color: #805AD5;
+    background-color: var(--purple);
     background-image: url('../../../public/images/trash.svg');
     background-repeat: no-repeat;
     background-position: center;

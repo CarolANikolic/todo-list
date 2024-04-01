@@ -1,5 +1,5 @@
 .todoWrapper {
-    background-color: #805AD5;
+    background-color: var(--dark-purple);
     
     display: flex;
     flex-direction: column;
@@ -20,8 +20,8 @@
 }
 
 .todoForm__button {
-    background-color: #03a9f4;
-    color: #f8fafa;
+    background-color: var(--light-blue);
+    color: var(--white);
     border: none;
     border-radius: 5px;
     font-size: 1rem;
