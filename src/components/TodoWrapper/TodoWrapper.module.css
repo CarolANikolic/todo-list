@@ -24,5 +24,17 @@
     color: #f8fafa;
     border: none;
     border-radius: 5px;
+    font-size: 1rem;
     font-weight: bolder;
+    padding: 0 .5rem;
+}
+
+@media screen and (min-width: 481px) {
+    .todoWrapper {
+        width: 70%;
+    }
+
+    .todoForm {
+        justify-content: space-between;
+    }
 }

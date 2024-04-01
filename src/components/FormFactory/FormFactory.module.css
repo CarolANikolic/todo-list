@@ -3,7 +3,13 @@
     border: none;
     border-radius: 5px;
     font-size: 1rem;
-    
+
     padding: .5rem;
-    width: 60%;
+    width: 50%;
+}
+
+@media screen and (min-width: 481px) {
+    .form__input {
+        width: 70%;
+    }
 }
