@@ -32,7 +32,7 @@ export const TodoWrapper = () => {
                 formStyle={styles.todoForm}
                 type='todoForm'
                 onSubmit={handleTodoFormSubmission}           
-                btnStyle='todoForm__button'
+                btnStyle={styles.todoForm__button}
             />
             <CheckboxList list={allTodos} delete={deleteTodo}/>
         </section>

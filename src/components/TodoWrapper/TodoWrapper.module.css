@@ -13,5 +13,14 @@
 
 .todoForm {
     display: inherit;
+    justify-content: space-between;
     width: 70%;
+}
+
+.todoForm__button {
+    background-color: #03a9f4;
+    color: #f8fafa;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
 }
