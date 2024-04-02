@@ -1,5 +1,6 @@
 .todoWrapper {
     background-color: var(--dark-purple);
+    border-radius: 10px;
     
     display: flex;
     flex-direction: column;
