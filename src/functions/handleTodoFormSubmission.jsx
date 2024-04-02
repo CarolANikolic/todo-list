@@ -5,10 +5,12 @@ import getTodosFromLocalStorage from './getTodosFromLocalStorage';
 
 const handleTodoFormSubmission = (inputValue) => {
     const userID = getUserID();
-    const newTodo = {id: uuidv4(), task: inputValue};
-    const todos = getTodosFromLocalStorage(userID);
-    const updatedTodos = [...todos, newTodo];
-    saveTodosInLocalStorage(userID, updatedTodos);
+    if (inputValue.trim() !== '') {
+        const newTodo = {id: uuidv4(), task: inputValue};
+        const todos = getTodosFromLocalStorage(userID);
+        const updatedTodos = [...todos, newTodo];
+        saveTodosInLocalStorage(userID, updatedTodos);
+    }
 }
 
 export default handleTodoFormSubmission

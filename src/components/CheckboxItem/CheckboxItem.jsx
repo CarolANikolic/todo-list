@@ -21,7 +21,6 @@ export const CheckboxItem = (props) => {
       <button 
         onClick={props.delete}
       >
-        {/* Delete */}
       </button>
     </div>
   );
