@@ -28,6 +28,12 @@ main {
     min-height: 100vh;
 }
 
+.errorPage {
+    background-color: var(--white);
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
 @media  screen and (min-width: 1024px) {
     :root {
         --fs-small: 1.2rem;
