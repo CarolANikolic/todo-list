@@ -11,7 +11,7 @@ export const TodoWrapper = () => {
     const userID = getUserID();
     const [ allTodos, setAllTodos ] = useState(getTodosFromLocalStorage(userID));
 
-    // Update component CheckboxList when the userID and/or the storaged todos changes (e.g., add new item)
+    // Update component CheckboxList when the userID and/or the stored todos changes (e.g., add new item)
     useEffect(() => {
         const interval = setInterval(() => {
             const updatedTodos = getTodosFromLocalStorage(userID);
