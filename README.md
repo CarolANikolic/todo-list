@@ -2,6 +2,8 @@
 
 Todo is a personal project developed to explore React. The basic idea of the Todo is a CRUD (Create, Read, Update, Delete) using the localStorage for data persistence to save the input individually for each user. With Todo, you can add new tasks to the list, update existing tasks, mark them as done, and delete them.
 
+### Check out Todo List [here](https://mytodotaskapp.netlify.app)
+
 ## Responsive Design
 
 The design is created by me and it follows a mobile-first workflow, adapting to all screen sizes.
